@@ -20,6 +20,11 @@ jobs:
     #     sudo unzip transfersh-v1.0.0-ubuntu-latest.zip && \
     #     sudo ls -R
 
+    - run: |
+        cd /usr/local/bin && \
+        sudo curl https://github.com/timvisee/ffsend/releases/download/v0.2.76/ffsend-v0.2.76-linux-x64-static -L -O -J && \
+        sudo ls -R
+
     - uses: actions/checkout@v4
       with:
         repository: actions/upload-artifact
