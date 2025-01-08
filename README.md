@@ -4,3 +4,8 @@ my-ubuntu
 ```
 env 'INPUT_INCLUDE-HIDDEN-FILES=true' INPUT_PATH=./upload-artifact/dist node ./upload-artifact/
 ```
+
+### Print OS info
+```
+lsb_release -a
+```
