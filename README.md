@@ -9,3 +9,6 @@ env 'INPUT_INCLUDE-HIDDEN-FILES=true' INPUT_PATH=./upload-artifact/dist node ./u
 ```
 lsb_release -a
 ```
+
+### DD sample
+- `dd if=/dev/zero of=export.img bs=128K conv=noerror,sync status=progress`
