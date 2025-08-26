@@ -1,8 +1,8 @@
 my-ubuntu
 =========
-### Upload (`INPUT_NAME=files` && `INPUT_OVERWRITE=true` is hardcorded)
+### Zip all the files inside `my_output_dir` and upload (`INPUT_NAME=files` && `INPUT_OVERWRITE=true` is hardcorded for convenience)
 ```
-env 'INPUT_INCLUDE-HIDDEN-FILES=true' INPUT_PATH=./upload-artifact/dist node ./upload-artifact/
+env 'INPUT_INCLUDE-HIDDEN-FILES=true' INPUT_PATH=./my_output_dir node ./upload-artifact/
 ```
 
 ### Print OS info
