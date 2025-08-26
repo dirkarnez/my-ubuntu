@@ -28,15 +28,16 @@ jobs:
 
 
     - run: sudo chmod -R +x ./
-    # - uses: actions/checkout@v4
-    #   with:
-    #     repository: actions/upload-artifact
-    #     ref: v4.5.0
-    #     path: upload-artifact
-    #     submodules: true
+    
+    - uses: actions/checkout@v4
+      with:
+        repository: actions/upload-artifact
+        ref: v4.5.0
+        path: upload-artifact
+        submodules: true
 
-    # - working-directory: upload-artifact
-    #   run: npm i
+    - working-directory: upload-artifact
+      run: npm i
         
     - uses: fastai/workflows/ssh@master
       with:
