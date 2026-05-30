@@ -14,3 +14,7 @@ lsb_release -a
 ```bash
 dd if=/dev/zero of=export.img bs=128K conv=noerror,sync status=progress
 ```
+
+### Tools
+- libguestfs-tools
+  - `sudo apt update && sudo apt install libguestfs-tools python3-guestfs`
